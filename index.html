@@ -295,11 +295,12 @@
         </section>
     </section>
 
-    <!-- SECCION CONTACTO -->
+    <!-- SECCION CONTACTO -->     
     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <div class="numero">
+                <form action="https://formspree.io/f/xanybvpa" method="post">
+                <div class="numero">                                    
                     
                 </div>
                 <div class="info">
@@ -309,26 +310,30 @@
             </div>
             <div class="fila">
                 <div class="col">
-                    <input type="text" placeholder="Ingrese Email">
+                    <label for="correo">Correo:</label>
+                    <input type="email" placeholder="Ingrese su corre" id="correo" name="correo" required>
                 </div>
                 <div class="col">
-                    <input type="text" placeholder="Ingrese Nombre">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text"placeholder="Ingrese su Nombre" id="Nombre"  name="Nombre" required>
                 </div>
             </div>
             <div class="mensaje">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa el Mensaje"></textarea>
-                <button>Enviar Mensaje</button>                
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Ingresa el Mensaje" required></textarea>
+                              
             </div>
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-star"></i>
                     <input type="checkbox" id="Terminos" name="Terminos" required>
-                    <label for="Terminos">ACEPTO LOS TÉRMINOS Y CONDICIONES</label>                   
+                    <label for="Terminos">ACEPTO LOS TÉRMINOS Y CONDICIONES</label>                                  
                
                 <div class="col">
                     <i class="fa-regular fa-clock"></i>
-                    Lunes a Sábado, 6:00Am - 10:00pm
+                    Lunes a Sábado, 6:00Am - 10:00pm                   
                 </div>
+                <button type="submit"> Enviar Mensaje </button> 
             </div>
         </div>
 
@@ -350,9 +355,11 @@
                 <a href="#">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
+            </form>
             </div>
         </div>
     </footer>
     <script src="app.js"></script>
+    ></from>  
 </body>
 </html>
